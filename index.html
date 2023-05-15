@@ -1,95 +1,208 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7216788221645921"
-  crossorigin="anonymous"></script>
-  <title>Google BARD AI</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bard AI Resources</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <style>
+    /* General styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f9f9;
+    }
+    
+    /* Header section */
+    header {
+      background: linear-gradient(135deg, #f7ffd6, #d6ebff);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+    
+    header h1 {
+      font-size: 4rem;
+      color: #fff;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
     }
 
-    header {
-      background-color: #007bff;
+    header p {
+      font-size: 2rem;
       color: #fff;
-      padding: 20px;
+      text-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      margin-top: 2rem;
+    }
+    
+    /* Main content section */
+    section {
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    
+    section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    section p {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+    }
+
+    /* Parallax effect */
+    .parallax {
+      background-image: url('https://images.unsplash.com/photo-1534430480873-4c815cc1f5ef?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1920&fit=max');
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 4rem 0;
+      color: #000000;
       text-align: center;
     }
 
-    h1 {
-      font-size: 32px;
-      margin: 0;
+    .parallax h2 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
     }
 
-    p {
-      font-size: 18px;
-      margin-top: 10px;
-      color: #eee;
+    .parallax p {
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
     }
 
-    .container {
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .main-content {
-      background-color: #fff;
-      padding: 40px;
-      border-radius: 4px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-top: 0;
+    /* Footer section */
+    footer {
+      background-color: #f5e9e2;
       color: #333;
+      text-align: center;
+      padding: 2rem;
     }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-gap: 1.5rem;
     }
 
-    li {
-      margin-bottom: 10px;
+    .news-card {
+      background-color: #f7f7f7;
+      padding: 1.5rem;
+      border-radius: 4px;
     }
 
-    a {
-      color: #007bff;
-      text-decoration: none;
+    .news-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
     }
 
-    a:hover {
+    .news-card p {
+      font-size: 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .news-card a {
+      color: #337ab7;
       text-decoration: underline;
     }
+
+    .news-card a:hover {
+      color: #23527c;
+    }
+
   </style>
 </head>
 <body>
   <header>
-    <h1>Google BARD AI</h1>
-    <p>Bidirectional Encoder Representations from Transformers for Adversarial Robustness</p>
+    <h1>Bard</h1>
+    <p>Explore the cutting-edge world of AI with Google's Bard.</p>
   </header>
 
-  <div class="container">
-    <div class="main-content">
-      <h2>Introduction to Google BARD AI</h2>
-      <p>
-        Google BARD AI is an advanced natural language processing (NLP) model that focuses on improving adversarial robustness in language understanding tasks. It extends the capabilities of BERT (Bidirectional Encoder Representations from Transformers) by incorporating techniques to enhance the model's resistance to adversarial attacks.
-      </p>
-
-      <h2>References and Resources</h2>
+  <section id="about">
+    <h2>About Bard AI</h2>
+      <p>Bard AI is a large language model (LLM) chatbot developed by Google AI. It was first released to the public in March 2023. Bard is trained on a massive dataset of text and code, and can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way. Bard is still under development, but it has learned to perform many kinds of tasks, including:</p>
       <ul>
-        <li><a href="https://ai.googleblog.com/2022/03/improving-adversarial-robustness-of.html">Official Google Blog: Improving the Adversarial Robustness of BERT with BARD</a></li>
-        <li><a href="https://arxiv.org/abs/2203.01175">Research Paper: BARD: Bidirectional Adversarially Robust Distillation for Robust NLP</a></li>
-        <li><a href="https://github.com/google-research/bard">GitHub Repository: Google BARD AI - TensorFlow Implementation</a></li>
-        <li><a href="https://towardsdatascience.com/introducing-bard-bidirectional-adversarially-robust-distillation-for-robust-nlp-b7a94c9395b5">Introducing BARD: Bidirectional Adversarially Robust Distillation for Robust NLP</a></li>
+        <li>Following your instructions and completing your requests thoughtfully.</li>
+        <li>Using its knowledge to answer your questions in a comprehensive and informative way, even if they are open ended, challenging, or strange.</li>
+        <li>Generating different creative text formats of text content, like poems, code, scripts, musical pieces, email, letters, etc.</li>
       </ul>
+      <p>Bard is still under development, but it has the potential to be a powerful tool for creativity, learning, and productivity.</p>
+  </section>
+
+  <section id="name-bard">
+    <h2>What does Bard stand for?</h2>
+      <p>The name "Bard" has a few different meanings.</p>
+      <ul>
+        <li>In Celtic cultures, a bard was a professional story teller, verse-maker, music composer, oral historian and genealogist, employed by a patron (such as a monarch or chieftain) to commemorate one or more of the patron's ancestors and to praise the patron's own activities.</li>
+        <li>In modern times, the word "bard" is often used to refer to a poet or singer, or to someone who is skilled in the use of language. It can also be used as a synonym for "entertainer" or "performer."</li>
+        <li>Google's Bard is a large language model, also known as a conversational AI or chatbot trained to be informative and comprehensive. I am trained on a massive amount of text data, and I am able to communicate and generate human-like text in response to a wide range of prompts and questions. For example, I can provide summaries of factual topics or create stories.</li>
+        <li>The name "Bard" was chosen for me because it reflects my ability to use language in a creative and informative way. I hope that I can live up to the name and be a source of knowledge and entertainment for you.</li>
+      </ul>
+  </section>
+
+  <section id="news">
+    <h2>Latest Bard AI News</h2>
+    <div class="news-grid">
+      <div class="news-card">
+        <h3>Introducing Bard AI: Revolutionizing the Future of Artificial Intelligence</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod eros a dui aliquet.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="news-card">
+        <h3>Bard AI Selected as Top AI Solution in Annual Tech Awards</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod eros a dui aliquet.</p>
+        <a href="#">Read More</a>
+      </div>
+      <div class="news-card">
+        <h3>New Research Study Highlights the Impact of Bard AI in Healthcare</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce euismod eros a dui aliquet.</p>
+        <a href="#">Read More</a>
+      </div>
     </div>
-  </div>
+  </section>  
+  
+  <section id="resources" class="parallax">
+    <h2>Educational Resources</h2>
+    <p>Explore these educational resources to deepen your understanding of Bard AI and its applications:</p>
+    <ul>
+      <li><a href="#">Getting Started with Bard AI: Beginner's Guide</a></li>
+      <li><a href="#">Bard AI in Healthcare: Case Studies and Applications</a></li>
+      <li><a href="#">Advanced Natural Language Processing Techniques: A Deep Dive</a></li>
+    </ul>
+  </section>
+  
+
+  <footer>
+    <p> :) </p>
+  </footer>
 </body>
 </html>
